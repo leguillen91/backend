@@ -1,0 +1,62 @@
+[
+    {
+    "nombre":"julian",
+    "apellido":"lopez",
+    "correo": "julian@unah.hn",
+    "password": "julian8888",
+    "direccion": "residencial plaza",
+    "nombreTarjeta": "julian lopez",
+    "numeroTarjeta": "0201489026708977",
+    "expira":"09",
+    "mes":"09",
+    "cvv":"091",
+    "longitud":"-87.2153088",
+    "latitud":"14.0804096",
+    "ordenes":[
+        {
+            "nombreProducto":"coca cola",
+            "descripcion": "coca cola en lata",
+            "cantidad":2,
+            "precio":25
+        },
+        {
+            "nombreProducto":"Gel de manos",
+            "descripcion": "Gel para el cuidado de higiene",
+            "cantidad":3,
+            "precio":90
+        }
+    ]
+
+    },
+
+    {
+        "nombre":"marcela",
+        "apellido":"castillo",
+        "correo": "marce@unah.hn",
+        "password": "marce8888",
+        "direccion": "residencial plaza",
+        "nombreTarjeta": "marcela lopez",
+        "numeroTarjeta": "0221989934556788",
+        "expira":"05",
+        "mes":"01",
+        "cvv":"054",
+        "longitud":"-87.2153088",
+        "latitud":"14.0804096",
+        "ordenes":[
+            {
+                "nombreProducto":"clasica",
+                "descripcion": "Pizza clasica de peperoni",
+                "cantidad":2,
+                "precio":99
+            },
+            {
+                "nombreProducto":"camisa",
+                "descripcion": "Camisa de cuello casual",
+                "cantidad":3,
+                "precio":350
+            }
+        ]
+
+    }
+
+]

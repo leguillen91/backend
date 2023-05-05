@@ -1,5 +1,10 @@
 import express from "express";
 import { Database } from "./utils/database";
+import clientesRouter from "./routers/clientes-router";
+import adminRouter from "./routers/admin-router";
+import motoristasRouter from "./routers/motoristas-router";
+
+
 import cors from 'cors';
 
 const database:Database = new Database(); //Se conecta a mongo
@@ -13,10 +18,14 @@ app.use(express.urlencoded({extended:true}));
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Probando backend');
 });
+
+
+app.use('/clientes', clientesRouter);
+app.use('/admin', adminRouter);
+app.use('/motoristas', motoristasRouter);
 
 app.listen(port, () => {
 	console.log(`Servidor Levantado en https://localhost:${port}`);
 });
-
