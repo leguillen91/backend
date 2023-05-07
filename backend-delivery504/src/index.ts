@@ -3,6 +3,8 @@ import { Database } from "./utils/database";
 import clientesRouter from "./routers/clientes-router";
 import adminRouter from "./routers/admin-router";
 import motoristasRouter from "./routers/motoristas-router";
+import categoriasRouter from "./routers/categorias-router";
+import motoristaRouter from "./routers/motoristas-router"; 
 
 
 import cors from 'cors';
@@ -25,6 +27,8 @@ app.get('/', (req, res) => {
 app.use('/clientes', clientesRouter);
 app.use('/admin', adminRouter);
 app.use('/motoristas', motoristasRouter);
+app.use('/categorias', categoriasRouter);
+
 
 app.listen(port, () => {
 	console.log(`Servidor Levantado en https://localhost:${port}`);
